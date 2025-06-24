@@ -43,3 +43,36 @@ console.log(typeof BigInt); // undefined
 
 const something = null; 
 console.log(typeof something); // object (this is a known bug in JavaScript, null is not an object)
+
+
+//<-----------stack(primitive) vs heap(reference) memory----------->
+// Primitive Types:
+// 1. Stored in stack.
+// 2. Passed or assigned by value (call by value).
+// 3. Changes to copies don't affect the original.
+// Very fast access
+// - Uses LIFO (Last In First Out) structure
+// - Data is stored with a fixed size
+
+// Reference Types:
+// 1. Stored in heap; accessed via references (stored in stack).
+// 2. Changing the value through another reference affects the original.
+// Stores objects, arrays, and functions
+// - Slower access compared to stack
+// - Data is dynamically allocated (flexible in size)
+// - Variables in the stack contain a reference (pointer) to the location in the heap
+
+
+let myName = "Ritu"; //stack memory
+anotherName = 'radhe';
+
+let userOne = {
+    email: 'ritugoyal@gmail.com',
+    upi: 'user@okaxis'
+}
+let userTwo = userOne;
+
+userTwo.email = 'umang@gmail.com';
+
+console.log(userOne.email);  //done change ho jaayenge
+console.log(userTwo.email); //because same reference is assigned to both variables
