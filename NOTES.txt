@@ -33,4 +33,4 @@ sufix x++ -> phle assign ho jaayegi then change hogi
 sufix x-- -> phle use hogi then change hogi
 prefix --x -> phle decrese ho jaayegi then assign hogi
 
-
+=== yhe only values ko hi nhi unke datatype ko bhi check karta hai
