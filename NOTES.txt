@@ -1,0 +1,36 @@
+"use strict"; //treat all JS code as newer version
+alert("hey"); -> we are using nodejs, not brower
+
+primitive datatype
+number-> 2 to pwer 53.
+bigint
+string = ''
+boolean = true/false
+null = standalone value
+undefined -  
+symbol- uniqueness ke liye
+
+object - non primitive
+
+console.log(typeof null); //object
+console.log(typeof undefined); //undefined
+
+
+num '33' - 33
+num '33abc' - NaN
+true - 1; false -0
+
+
+1- true; 0- false
+"" - false
+'ritu' - true
+++variable only
+prefix ++x ->
+let c,d=5;
+d = ++c; //mtlb phle c ki value change hogi then assign hogi d ko
+
+sufix x++ -> phle assign ho jaayegi then change hogi
+sufix x-- -> phle use hogi then change hogi
+prefix --x -> phle decrese ho jaayegi then assign hogi
+
+
