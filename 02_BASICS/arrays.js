@@ -18,4 +18,35 @@ for(let i=0; i<rev.length; i++){
 }
 
 //Arrays method
-myArr.push(7);
+myArr.push(7); //element add krne ke liye
+myArr.push(45); //end mai add krta hai
+// console.log(myArr);
+
+myArr.pop(); //last value ko remove kr deta hai
+
+myArr.unshift(90);
+console.log(myArr); //sabe aage add kr deta element ko , sabko shift krna pdta hai memory effectent nhi hai yhe
+//load aa jata hai computer pr
+
+myArr.shift();
+console.log(myArr); //90 ko remove kr dega
+
+//Question method - t/f
+
+console.log(myArr.includes(78));//isme yhe hai yaa nhi
+console.log(myArr.indexOf(90)); //return the index of element otherwise return -1
+
+const newArr = myArr.join(); //dataype-String
+console.log(newArr);
+
+
+//slice, splice
+console.log('A', myArr);
+
+const myn1 = myArr.slice(1,3); //[ , )
+console.log(myn1); //1,2
+
+const myn2 = myArr.splice(1,3); //[, ]
+console.log(myn2); //1,2,3
+
+console.log(myArr); //splice kiye the utne elements orignal array se bhi delete ho gye hai
