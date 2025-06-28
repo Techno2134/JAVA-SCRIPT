@@ -61,4 +61,19 @@ function handleObject(anyobject){
     console.log(`Username is ${anyobject.userName} and price is ${anyobject.price}`)
 }
 
-handleObject(user);
+// handleObject(user);
+handleObject({
+    userName: 'sam',
+    price: 399
+})
+
+//array pass krne ke liye
+const mynewArray = [200, 400, 300, 560];
+
+function retuurnSecondValue(getArray){
+    return getArray[1]
+}
+
+console.log(retuurnSecondValue(mynewArray));
+//or
+console.log(retuurnSecondValue([200, 678, 890, 45]));
