@@ -33,3 +33,32 @@ function loginUserMessage(username = 'sam'){ //sam is default value jisse hum kh
 
 console.log(loginUserMessage('Ritu'));
 
+
+//usercart
+
+// function calculateCartPrice(...num1){ //isko hi rest operator bola jata hai or spread depends on use case
+//     return num1; 
+// }
+// console.log(calculateCartPrice(200, 400, 865)); // for this we have rest opertor
+//array ban jaayega [200, 400, 865]
+
+// or
+function calculateCartPrice(val1, val2, ...num1){ 
+    return num1; 
+}
+console.log(calculateCartPrice(200, 400, 865,456)); 
+//val1=200, val2 =400 rest in array
+
+
+//object ko function mai kaise use kiya jata hai
+
+const user = {
+    userName: 'Coffee',
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.userName} and price is ${anyobject.price}`)
+}
+
+handleObject(user);
