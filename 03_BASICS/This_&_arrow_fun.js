@@ -21,9 +21,44 @@ console.log(this); //{} (empty-refering to an empty object )print hoa h
 //window gobal object h
 
 
-function chai(){
+// function chai(){
+//     let username = 'ritu';
+//     console.log(this.username); //undefined yhe objects ke andr hi kaam krta hai functions ke andr nhi 
+// }
+
+// chai(); 
+
+//Arrow Fucntions
+
+const chai = function(){
     let username = 'ritu';
-    console.log(this);
+    console.log(this.username);  //undefined
 }
 
 chai();
+
+const chaiCode = () => {
+    let username = 'ritu';
+    console.log(this.username); //same as simple unfunction
+}
+
+chaiCode();
+
+const addTwo = (num1, num2) => {
+    return num1 + num2;
+}
+console.log(addTwo(2,5));
+
+//implicit return - paranthess use nhi krne pdte hai
+//one line code ke liye use hota hai
+// const addNum = (num1, num2) => num1 + num2;
+// or
+const addNum = (num1, num2) => (num1 + num2); //this will use in react
+
+//object return krna ho tho kaise karenge
+const addNums = (num1, num2) => ({username: 'ritu'});
+console.log(addNums(4,30));
+
+
+// const myArray = [2,3,4,5,6];
+// myArray.forEach()
